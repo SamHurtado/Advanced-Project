@@ -22,7 +22,7 @@ function contact(event) {
             'service_adyukod',
             'template_2214fxg',
             event.target,
-            'user_UPnKTCZcG4nJ5s_pU'
+            'UPnKTCZcG4nJ5s_pU'
         ).then(() => {
             console.log('this worked1')
         })
