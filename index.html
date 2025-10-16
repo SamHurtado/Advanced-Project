@@ -19,14 +19,14 @@
 </head>
 
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <!-- CHANGE IMAGE BELOW -->
                 <img id="personal-logo" src="./assets/logo.svg" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -34,7 +34,7 @@
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
@@ -65,15 +65,17 @@
                 Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
-                    <a class="social__link click " href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a class="social__link click" href=""><i class="fa-brands fa-github-alt"></i></a>
-                    <a class="social__link click" href=""><i class="fa-solid fa-file-lines"></i></a>
+                    <a class="social__link click" target="_blank" href="https://www.linkedin.com/in/samuel-hurtado-531725157/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="social__link click" target="_blank" href="https://github.com/SamHurtado?tab=repositories"><i class="fa-brands fa-github-alt"></i></a>
+                    <a class="social__link click" target="_blank" href=""><i class="fa-solid fa-file-lines"></i></a>
                 </div>
             </div>
         </header>
-        <button class="mail__btn click" onclick="toggleModal()">
-           <i class="fa-regular fa-envelope"></i>
-        </button>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -139,6 +141,15 @@
                 </div>
                 </div>
         </div>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/triangle.svg" class="shape shape--3">
+        <img src="./assets/semi circle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/triangle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
     </section>
     <section id="projects">
         <div class="container">
@@ -162,10 +173,10 @@
                                     fugit excepturi ratione perferendis eum repellat sunt.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
+                                    <a href="https://www.linkedin.com/in/samuel-hurtado-531725157/" target="_blank" class="project__description--link">
                                         <i class="fa-brands fa-linkedin-in"></i>
                                     </a>
-                                    <a href="#" class="project__description--link">
+                                    <a href="https://github.com/SamHurtado?tab=repositories" target="_blank" class="project__description--link">
                                         <i class="fa-brands fa-github-alt"></i>
 
                                     </a>
@@ -245,16 +256,16 @@
                     <img class="footer__logo--img" src="./assets/logo.svg" alt="">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="https://github.com/SamHurtado?tab=repositories" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
                         GitHub
                     </a>
-                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="https://www.linkedin.com/in/samuel-hurtado-531725157/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
                         LinkedIn
                     </a>
-                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
                         Contact
                     </a>
-                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="#" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
                         Resume
                     </a>
                 </div>
